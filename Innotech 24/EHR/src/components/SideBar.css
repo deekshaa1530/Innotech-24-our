@@ -1,0 +1,51 @@
+.sidebar {
+    position: fixed;
+    top: 60px; /* Adjust if Navbar height changes */
+    left: -250px; /* Initially hidden */
+    width: 250px;
+    height: calc(100% - 60px); /* Fill remaining height */
+    background-color: #111;
+    color: white;
+    padding-top: 20px;
+    transition: left 0.3s ease;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 15px;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #575757;
+  }
+  
+  .sidebar-toggle {
+    position: fixed;
+    top: 70px; /* Adjust for Navbar height */
+    left: 10px;
+    z-index: 100;
+    padding: 10px 15px;
+    background-color: #111;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sidebar-toggle:hover {
+    background-color: #444;
+  }
+  
